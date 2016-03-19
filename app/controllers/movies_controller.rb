@@ -8,5 +8,7 @@ class MoviesController < ApplicationController
   end
 
   def order
+  	@movie = Movie.find(params[:id])
+  	render layout: false
   end
 end

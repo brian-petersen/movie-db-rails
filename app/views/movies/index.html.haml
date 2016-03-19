@@ -1,4 +1,12 @@
-%h1 Movies#index
-%p Find me in app/views/movies/index.html.haml
+/ #header
+/   %input#search{ name: :search, type: :text }
 
-= @movies.size
+/ .wrapper
+%ul.movies
+  - @movies.each do |movie|
+    %li.movie
+      = link_to order_movie_path(movie), class: 'movie-link' do
+        = image_tag movie.poster.url(:sized)
+        .overlay
+          %h2.movie-title= movie.title
+          %p.movie-description= movie.description
