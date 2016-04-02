@@ -3,6 +3,9 @@ body {
   background-size: cover;
   font-family: sans-serif;
   min-height: 100vh;
+}
+
+.site-wrap {
   padding: 10px;
 }
 
@@ -17,7 +20,7 @@ ul.movies {
     position: relative;
     float: left;
     overflow: hidden;
-    margin: 10px 10px 0 0;
+    margin: 0 10px 10px 0;
 
     a.movie-link {
       text-decoration: none;

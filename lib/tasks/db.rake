@@ -4,7 +4,7 @@ namespace :db do
     # IMDB movies
     puts 'Importing movies from IMDB'
 
-    movie_ids = ["0095016", "0372784", "3498820", "2975590", "2948356", "1179933", "1431045"]
+    movie_ids = ['0095016', '0372784', '3498820', '2975590', '2948356', '1179933', '1431045']
     movie_ids.each do |id|
       m = Imdb::Movie.new(id)
 
