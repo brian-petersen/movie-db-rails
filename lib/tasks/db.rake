@@ -12,7 +12,7 @@ namespace :db do
       desc = m.plot
       poster_url = m.poster
       
-      Movie.create title: title, description: desc, poster: URI.parse(poster_url)
+      Movie.create title: title, description: desc, poster: URI.parse(poster_url), poster_url: poster_url
     end
   end
 end

@@ -1,12 +1,9 @@
-/ #header
-/   %input#search{ name: :search, type: :text }
-
-/ .wrapper
 %ul.movies
   - @movies.each do |movie|
     %li.movie
       = link_to order_movie_path(movie), class: 'movie-link' do
-        = image_tag movie.poster.url(:sized)
+        - # = image_tag movie.poster.url(:sized)
+        = image_tag movie.poster_url
         .overlay
           %h2.movie-title= movie.title
           %p.movie-description= movie.description

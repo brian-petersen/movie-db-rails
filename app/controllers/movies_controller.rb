@@ -3,12 +3,8 @@ class MoviesController < ApplicationController
     @movies = Movie.all
   end
 
-  def show
-    @movie = Movie.find(params[:id])
-  end
-
   def order
     @movie = Movie.find(params[:id])
-    render layout: false
+    # render layout: false
   end
 end
