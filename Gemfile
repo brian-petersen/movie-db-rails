@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
@@ -39,6 +40,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 1.6.4'
 
-  # Pull needed information from IMDB database to local database (used for seed)
+  # Pull needed information from IMDB database to local database (used for rake db:populate)
   gem 'imdb', '~> 0.8.2'
 end
