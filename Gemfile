@@ -28,6 +28,9 @@ gem 'paperclip', '~> 4.3.6'
 # Automatically setups usage for haml for templating files
 gem 'haml-rails', '~> 0.9.0'
 
+# Pull needed information from IMDB database (used for rake db:populate)
+gem 'imdb', '~> 0.8.2'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '~> 8.2.2'
@@ -39,7 +42,4 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring', '~> 1.6.4'
-
-  # Pull needed information from IMDB database to local database (used for rake db:populate)
-  gem 'imdb', '~> 0.8.2'
 end
